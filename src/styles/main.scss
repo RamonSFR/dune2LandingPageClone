@@ -1,4 +1,5 @@
 @use 'variables';
+@use 'home';
 
 * {
     margin: 0;
@@ -7,5 +8,5 @@
 }
 
 body {
-    background-color: black;
+    background-color: variables.$bgColor;
 }

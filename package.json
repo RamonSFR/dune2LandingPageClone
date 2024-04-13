@@ -1,8 +1,8 @@
 {
   "name": "dune2landingpageclone",
   "version": "1.0.0",
-  "description": "Landing page do filme Duna Parte 2",
-  "main": "index.js",
+  "description": "",
+  "main": "gulpfile.js",
   "scripts": {
     "build": "gulp",
     "watch": "gulp watch",
@@ -12,7 +12,6 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^5.0.0",
-    "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.75.0"
   }
