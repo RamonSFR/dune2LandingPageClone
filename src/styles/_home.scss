@@ -1,3 +1,34 @@
 .home {
-    background-image: url('../images/home/home_bg_desktop.jpg');
+    &_bg {
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        background-image: url('../images/home/home_bg_desktop.jpg');
+
+        @media (max-width: 767px) {
+            background-image: url('../images/home/home_bg_mobile.jpg');
+        }
+
+        @media (max-width: 1023px) {
+            background-image: url('../images/home/home_bg_tablet.jpg');
+        }
+
+        background-color: #120400;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+    }
+
+    &_credits {
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        height: 25px;
+    }
 }

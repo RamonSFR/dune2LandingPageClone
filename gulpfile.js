@@ -7,14 +7,7 @@ function styles() {
        .pipe(gulp.dest('./dist/styles'));
 }
 
-function images() {
-    return gulp.src('./src/images/**/*')
-        .pipe(imagemin())
-        .pipe(gulp.dest('./dist/images'));
-}
-
-exports.default = gulp.parallel(styles,images);
+exports.default = gulp.parallel(styles);
 exports.watch = function () {
     gulp.watch('src/styles/*.scss', styles);
-    gulp.watch('src/images/**/*', images);
 }

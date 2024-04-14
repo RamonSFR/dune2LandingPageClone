@@ -1,0 +1,39 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: -5;
+    left: 0;
+    z-index: 999;
+    padding: 0 32px;
+
+    &_links {
+        display: flex;
+        list-style: none;
+        justify-content: end;
+        gap: 15px;
+
+        &_item {
+            img {
+                height: 20px;
+            }
+
+            .hamburguer_menu {
+                background: none;
+                border: none;
+                outline: none;
+                cursor: pointer;
+
+                span {
+                    display: block;
+                    background-color: #fff;
+                    width: 24px;
+                    height: 3px;
+                    border-radius: 5px;
+                    opacity: 1;
+                    margin: 3px auto;
+
+                }
+            }
+        }
+    }
+}
