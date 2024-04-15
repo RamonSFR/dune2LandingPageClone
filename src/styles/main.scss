@@ -1,6 +1,7 @@
 @use 'variables';
 @use 'header';
 @use 'home';
+@use 'trailers';
 
 * {
     margin: 0;
@@ -16,4 +17,11 @@
 
 body {
     background-color: variables.$bgColor;
+}
+
+.title {
+    color: variables.$mainColor;
+    font-family: 'ITCBLair';
+    font-size: 2rem;
+    font-weight: 400;
 }
