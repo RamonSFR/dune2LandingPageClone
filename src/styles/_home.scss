@@ -5,14 +5,17 @@
         height: 100%;
         width: 100%;
         background-image: url('../images/home/home_bg_desktop.jpg');
+        
+        @media (max-width: 1200px) {
+            background-image: url('../images/home/home_bg_tablet.jpg');
+            background-size: contain;
+            background-position: center top;
+        }
 
         @media (max-width: 767px) {
             background-image: url('../images/home/home_bg_mobile.jpg');
         }
 
-        @media (max-width: 1023px) {
-            background-image: url('../images/home/home_bg_tablet.jpg');
-        }
 
         background-color: #120400;
         background-repeat: no-repeat;
@@ -30,5 +33,58 @@
         justify-content: center;
         margin-top: 25px;
         height: 25px;
+
+        @media (max-width: 1200px) {
+            display: none;
+        }
+    }
+
+    &_only_in_cinemas {
+        display: flex;
+        justify-content: center;
+        margin-top: 65vh;
+
+        img {
+            width: 225px;
+        }
+
+        @media (max-width: 1200px) {
+            display: none;
+        }
+    }
+
+    &_social {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+        &_links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+
+            &_item {
+                margin-bottom: 16px;
+                
+                img {
+                    width: 25px;
+                }
+            }
+        }
+
+        &_btn {
+            font-family: 'ITCBlair';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            border-radius: 30px;
+            background-color: #70281a;
+            border: 1px solid #eba561;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 400;
+            height: 2.6rem;
+        }
     }
 }

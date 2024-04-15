@@ -8,6 +8,12 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'ITCBlair';
+    src: url('../../assets/fonts/blair-itc-medium.otf');
+    font-weight: 400;
+}
+
 body {
     background-color: variables.$bgColor;
 }
