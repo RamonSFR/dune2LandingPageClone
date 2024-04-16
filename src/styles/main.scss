@@ -3,6 +3,7 @@
 @use 'home';
 @use 'trailers';
 @use 'synopsis';
+@use 'gallery';
 
 html {
     scroll-behavior: smooth;
@@ -27,6 +28,6 @@ body {
 .title {
     color: variables.$mainColor;
     font-family: 'ITCBLair';
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 400;
 }

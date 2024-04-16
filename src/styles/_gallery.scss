@@ -1,0 +1,52 @@
+@use 'variables';
+
+@mixin indicator {
+    cursor: pointer;
+    position: relative;
+    color: variables.$mainColor;
+    font-size: 26pt;
+}
+
+.gallery {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 128px;
+
+    &_title {
+        margin-bottom: 16px;
+    }
+
+    &_carousel {
+        display: flex;
+        align-items: center;
+
+        &_prev, &_next {
+            @include indicator;
+        }
+
+        &_prev {
+            left: 5%;
+            @media (max-width: 1200px) {
+                left: 20%;
+            }
+        }
+
+        &_next {
+            right: 5%;
+            @media (max-width: 1200px) {
+                right: 20%;
+            }
+        }
+
+        &_item {
+            @media (max-width: 767px) {
+                img {
+                    height: 60vw;
+                }
+            }
+        }
+    }
+}
