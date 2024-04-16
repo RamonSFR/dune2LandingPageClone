@@ -14,12 +14,14 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 128px;
+    max-width: 100%;
 
     &_title {
         margin-bottom: 16px;
     }
 
     &_carousel {
+        max-width: 100%;
         display: flex;
         align-items: center;
 
@@ -29,30 +31,25 @@
 
         &_prev {
             left: 5%;
-            @media (max-width: 1200px) {
-                left: 20%;
-            }
         }
 
         &_next {
             right: 5%;
-            @media (max-width: 1200px) {
-                right: 20%;
-            }
         }
 
         &_items {
+            max-width: 100%;
             &_item {
+                max-width: 100%;
                 display: none;
             
                 &--is-active {
                     display: block;
                 }
 
-                @media (max-width: 767px) {
-                    img {
-                        height: 60vw;
-                    }
+                img {
+                    max-width: 100%;
+                    object-fit: contain;
                 }
             }
         }
