@@ -22,4 +22,6 @@ function videos() {
 exports.default = gulp.parallel(styles, images, videos);
 exports.watch = function () {
     gulp.watch('src/styles/*.scss', styles);
+    gulp.watch('src/images/**/*.jpg', images);
+    gulp.watch('src/videos/**/*.mp4', videos);
 }
