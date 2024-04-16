@@ -1,0 +1,36 @@
+@use 'variables';
+
+.synopsis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 57vw;
+    margin: 0 auto;
+    padding-bottom: 5%;
+    line-height: 1.5;
+
+    @media (max-width: 767px) {
+        max-width: 90vw;
+    }
+    
+    &_title {
+        margin-bottom: 2rem;
+
+        @media (max-width: 767px) {
+            img {
+                height: 100px;
+            }
+        }
+    }
+
+    &_text {
+        font-family: "ITCBlair";
+        color: #fff;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        text-align: justify;
+        font-size: 15px;
+        letter-spacing: .5px;
+    }
+}
