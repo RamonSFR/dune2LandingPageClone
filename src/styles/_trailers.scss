@@ -6,8 +6,56 @@
     flex-direction: column;
     align-items: center;
 
+    &_title {
+        margin-bottom: 16px;
+    }
+
     &_video_wrapper {
-        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &_main_video {
+            border: 1px solid #fff;
+            margin-bottom: 16px;
+
+            video {
+                max-width: 900px;
+
+                @media (max-width: 1200px) {
+                    max-width: 500px;
+                }
+
+                @media (max-width: 768px) {
+                    max-width: 100vw;
+                }
+            }
+        }
+
+        &_thumbnails {
+            display: flex;
+            gap: 16px;
+            
+
+            &_thumbnail {
+                cursor: pointer;
+                transition: opacity 0.5s;
+                border: 1px solid variables.$mainColor;
+
+                &:hover {
+                    opacity: 50%;
+                }
+
+                img {
+                    height: 175px;
+                }
+    
+                &--is-active {
+                    border: 1px solid #a57257;
+                }
+            }
+
+        }
     }
 
 }

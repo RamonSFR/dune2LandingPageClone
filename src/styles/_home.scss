@@ -49,6 +49,10 @@
         img {
             width: 225px;
         }
+
+        @media (min-width: 767px) and (max-width: 1200px) {
+            margin-top: 75vh;
+        }
     }
 
     &_social {
