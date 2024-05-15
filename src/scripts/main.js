@@ -32,7 +32,6 @@ function carousel() {
         } else {
             currentImage++;
         }
-        console.log(currentImage)
         carouselImages[currentImage].classList.add('gallery_carousel_items_item--is-active');
     })
 
@@ -43,7 +42,6 @@ function carousel() {
         } else {
             currentImage--;
         }
-        console.log(currentImage)
         carouselImages[currentImage].classList.add('gallery_carousel_items_item--is-active');
     })
 }
